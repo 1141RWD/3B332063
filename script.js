@@ -65,7 +65,7 @@ function initSliders(scope) {
             show(index);
         });
 
-        // 點圖片 → 開燈箱
+        
        
 
         // 手機滑動
@@ -85,27 +85,3 @@ function initSliders(scope) {
     });
 }
 
-// =====================
-// Modal（活動燈箱）
-// =====================
-function initModal() {
-    const modal = document.getElementById('activity-modal');
-    const closeBtn = modal.querySelector('.close-btn');
-
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', e => {
-        if (e.target === modal) closeModal();
-    });
-}
-
-function openModal(imgSrc) {
-    const modal = document.getElementById('activity-modal');
-    const body = document.getElementById('modal-body');
-
-    body.innerHTML = `<img src="${imgSrc}" style="width:100%;border-radius:10px;">`;
-    modal.style.display = 'flex';
-}
-
-function closeModal() {
-    document.getElementById('activity-modal').style.display = 'none';
-}
