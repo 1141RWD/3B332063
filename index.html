@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勤益科技大學學生會</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 固定 Header -->
+    <header>
+        <div class="container">
+            <h1>勤益科技大學學生會</h1>
+            <nav>
+                <button class="tab-btn" onclick="showContent('intro')">學生會介紹</button>
+                <button class="tab-btn" onclick="showContent('cabinet')">幹部介紹</button>
+                <button class="tab-btn" onclick="showContent('rental1')">繳件規定</button>
+                <button class="tab-btn" onclick="showContent('activities')">活動介紹</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 學生會介紹 -->
+<div class="tab-content" id="intro">
+    <h2>學生會介紹</h2>
+    <h1>學生會宗旨:</h1>
+    
+    <!-- 圖片超連結，靠左顯示 -->
+   
+
+    <div class="purpose-box">
+        <img src="徽章.jpg" class="badge">
+        <table class="purpose-table">
+            <tr>
+                <td>
+                    1. 實現學生自治理念，增進學生權益，維繫校園和諧。<br>
+                    2. 培養學生獨立自主能力，發展校園民主制度。<br>
+                    3. 作為學校與學生間的溝通橋梁，創建溝通管道，增進學生福利。<br>
+                    4. 整合校內外資源，推動各類活動。<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <h1>學生會簡介:</h1><br>
+    國立勤益科技大學學生會由學生會行政中心(行政)、學生議會(立法)、學生仲裁評議委員會(司法)組成，採行政、立法、司法三權分立。<br>
+    學生會為全校最高的學生自治組織，代表學生行使自治權利，處理學生在校學習、生活與權益有關事項，為學生與學校的溝通橋樑。<br>
+    還需負起管理全校社團、系學會及學生組織相關的行政工作及活動。除此之外，學生會還需辦理各種全校性活動，提升校園風氣及增進校園和諧。<br>
+    
+   
+</div>
+
+
+
+        <!-- 幹部介紹 -->
+<div class="tab-content" id="cabinet">
+    <h2>幹部介紹</h2>
+    <div class="year-selector">
+        <button class="year-btn" onclick="showYear('114')">114年</button>
+    </div>
+    <div id="cabinet-content">
+        <!-- 114年 -->
+        <div id="cabinet-114" class="year-content">          
+            
+
+            <!-- 內副會長 -->
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/內副會.jpg" alt="內副會-陳柏成"></div>
+                <div class="info">
+                    <h3>陳柏成</h3>
+                    <p>內副會長</p>
+                    <p>負責學生會內部事務、財務管理及活動規劃，協助會長工作。</p>
+                </div>
+            </div>
+            <!-- 會長 -->
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/會長.jpg" alt="會長-張謦淇"></div>
+                <div class="info">
+                    <h3>張謦淇</h3>
+                    <p>會長</p>
+                    <p>負責學校活動統籌、協調各部門，確保活動順利進行。</p>
+                </div>
+            </div>
+
+            <!-- 外副會長 -->
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/外副會.jpg" alt="外副會-林芷芸"></div>
+                <div class="info">
+                    <h3>林芷芸</h3>
+                    <p>外副會長</p>
+                    <p>負責對外事務與校外聯繫，協助活動推廣及合作事宜。</p>
+                </div>
+            </div><br>
+
+            <!-- 秘書 -->
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/執秘.jpg" alt="執行秘書-曹語倢"></div>
+                <div class="info">
+                    <h3>曹語倢</h3>
+                    <p>執行秘書</p>
+                    <p>負責活動執行與行政協調，確保學生會各項事務順利運作。</p>
+                </div>
+            </div>
+
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/行政.jpg" alt="行政秘書-張琳"></div>
+                <div class="info">
+                    <h3>張琳</h3>
+                    <p>行政秘書</p>
+                    <p>負責會務文件管理及各項行政支援，協助內部運作。</p>
+                </div>
+            </div><br>
+
+            <!-- 部門 -->
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/社團.jpg" alt="社團部-廖家曼"></div>
+                <div class="info">
+                    <h3>社團部<br>部長-廖家曼<br>次長-黃宗佑</h3>
+                    <p>社團部</p>
+                    <p>負責社團管理與活動統籌，協助學生參與校內社團事務。</p>
+                </div>
+            </div>
+
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/學聯.jpg" alt="學聯部-張貝琳"></div>
+                <div class="info">
+                    <h3>學聯部<br>部長-張貝琳<br>次長-張琳</h3>
+                    <p>學聯部</p>
+                    <p>負責學生代表事務及學生福利相關活動。</p>
+                </div>
+            </div>
+
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/總務.jpg" alt="總務部-王圻峯"></div>
+                <div class="info">
+                    <h3>總務部<br>部長-王圻峯<br>次長-駱秉鈞</h3>
+                    <p>總務部</p>
+                    <p>負責學生會資源管理及後勤支援。</p>
+                </div>
+            </div>
+
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/文宣.jpg" alt="文宣部-林辰晏"></div>
+                <div class="info">
+                    <h3>林辰晏</h3>
+                    <p>文宣部</p>
+                    <p>負責活動宣傳、校園媒體及資訊公告。</p>
+                </div>
+            </div><br>
+
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/學權.jpg" alt="學權部-林芷芸"></div>
+                <div class="info">
+                    <h3>林芷芸</h3>
+                    <p>學權部</p>
+                    <p>負責學生權益及申訴相關事宜，保障學生權益。</p>
+                </div>
+            </div>
+
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/活動.jpg" alt="活動部-王振維"></div>
+                <div class="info">
+                    <h3>王振維</h3>
+                    <p>活動部</p>
+                    <p>負責學生會活動規劃與執行，確保活動順利進行。</p>
+                </div>
+            </div>
+
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/公關.jpg" alt="公關部-方靖涵"></div>
+                <div class="info">
+                    <h3>公關部<br>部長-方靖涵<br>次長-陳瑩彰</h3>
+                    <p>公關部</p>
+                    <p>負責校內外聯絡及活動宣傳，維護學生會形象。</p>
+                </div>
+            </div>
+
+            <div class="cabinet-card">
+                <div class="image"><img src="幹照/新聞.jpg" alt="新聞部-何姍珊"></div>
+                <div class="info">
+                    <h3>新聞部<br>部長-何姍珊<br>次長-方靖涵</h3>
+                    <p>新聞部</p>
+                    <p>負責校園新聞撰寫及資訊發布，紀錄活動成果。</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+        <div class="tab-content" id="rental1">
+            <h2>繳件規則</h2>
+
+            <h1>勤益科技大學學生會繳件規則簡介</h1><br>
+
+            <p>
+                <h3>每學期期初期末都會舉辦，開會時間會由學生會發布</h3><br>
+                勤益科技大學學生會為確保各項活動、經費與行政事務之順利推動，訂有繳件規則，供各系學會、社團及相關學生組織遵循。<br>
+                凡涉及活動申請、經費核銷，皆須依規定填寫相關文件，並於期限內繳交完整資料。<br>
+                透過明確的繳件流程與期限規範，學生會得以有效進行審核與行政處理，同時保障各單位與學生之權益，促進校園事務運作之透明與效率。
+            </p>
+
+            <table class="rule-table">
+                <tr>
+                    <td>
+                        學聯大會PPT<br>
+                        <a href="114上期末學聯大會.pdf" download>
+                            <img src="學聯大會.jpg" alt="下載學聯大會PPT" width="200">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        社團大會PPT<br>
+                        <a href="22nd-期末社團大會.pdf" download>
+                            <img src="社團大會.jpg" alt="下載社團大會PPT" width="200">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- 活動介紹 -->
+        <div class="tab-content" id="activities">
+            <h2>活動介紹</h2>
+            <div>
+                <button class="activity-btn" onclick="showActivity('114')">114年</button>
+                <button class="activity-btn" onclick="showActivity('113')">113年</button>
+            </div>
+            <div id="activity-114" class="activity-content">
+
+                <!-- 社團博覽會 -->
+                <div class="activity-card">
+                    <h3>社團博覽會</h3>
+                    <p>活動介紹：為了讓全校師生更加了解社團，將各社團集合在一起，進行一個集體宣傳</p>
+            
+                    <div class="slider">
+                        <img src="114/社博1.jpg" class="slide active">
+                        <img src="114/社博2.jpg" class="slide">
+                        <img src="114/社博3.jpg" class="slide">
+                        <img src="114/社博4.jpg" class="slide">
+                        <img src="114/社博5.jpg" class="slide">
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+            
+                <!-- 新生茶會 -->
+                <div class="activity-card">
+                    <h3>新生茶會</h3>
+                    <p>活動介紹：藉由茶會讓新生可以了解到學生會的組織章程架構</p>
+            
+                    <div class="slider">
+                        <img src="114/茶會1.jpg" class="slide active">
+                        <img src="114/茶會2.jpg" class="slide">
+                        <img src="114/茶會3.jpg" class="slide">
+                        <img src="114/茶會4.jpg" class="slide">
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3>海科大交流</h3>
+                    <p>活動介紹：藉由交流活動，可以與外校的學生會學習到各種辦活動的方法與訣竅</p>
+            
+                    <div class="slider">
+                        <img src="114/交流1.jpg" class="slide active">
+                        <img src="114/交流2.jpg" class="slide">
+                        <img src="114/交流3.jpg" class="slide">
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <h3>師生座談</h3>
+                    <p>活動介紹：藉由師生座談將學校的問題與解決方法與變動告知系會、社團及各班班代，也藉由此機會讓全校師生反映問題</p>
+            
+                    <div class="slider">
+                        <img src="114/師生1.jpg" class="slide active">
+                        <img src="114/師生2.jpg" class="slide">
+                        <img src="114/師生3.jpg" class="slide">
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+            
+                <!-- 社團評鑑 -->
+                <div class="activity-card">
+                    <h3>社團評鑑</h3>
+                    <p>活動介紹：為了讓全校社團／系會展示一年成果並交流學習</p>
+            
+                    <div class="slider">
+                        <img src="114/社評1.jpg" class="slide active">
+                        <img src="114/社評2.jpg" class="slide">
+                        <img src="114/社評3.jpg" class="slide">
+                        <img src="114/社評4.jpg" class="slide">
+                        <img src="114/社評5.jpg" class="slide">
+                        <img src="114/社評6.jpg" class="slide">
+                        <img src="114/社評7.jpg" class="slide">            
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+            
+                <!-- 校園演唱會 -->
+                <div class="activity-card">
+                    <h3>校園演唱會</h3>
+                    <p>活動介紹：讓全校師生在校內就能欣賞演唱會，提升校園活力與知名度</p>
+            
+                    <div class="slider">
+                        <img src="114/演唱會1.jpg" class="slide active">
+                        <img src="114/演唱會2.jpg" class="slide">
+                        <img src="114/演唱會3.jpg" class="slide">
+                        <img src="114/演唱會4.jpg" class="slide">
+                        <img src="114/演唱會5.jpg" class="slide">
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="activity-113" class="activity-content">
+
+                <!-- 社團博覽會 -->
+                <div class="activity-card">
+                    <h3>社團博覽會</h3>
+                    <p>活動介紹：為了讓全校師生更加了解社團，將各社團集合在一起，進行一個集體宣傳</p>
+            
+                    <div class="slider">
+                        <img src="113/社博1.jpg" class="slide active">
+                        <img src="113/社博2.jpg" class="slide">
+                        <img src="113/社博3.jpg" class="slide">
+                        <img src="113/社博4.jpg" class="slide">
+                        <img src="113/社博5.jpg" class="slide">
+            
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+            
+                <!-- 新生茶會 -->
+                <div class="activity-card">
+                    <h3>新生茶會</h3>
+                    <p>活動介紹：藉由茶會讓新生可以了解到學生會的組織章程架構</p>
+            
+                    <div class="slider">
+                        <img src="113/茶會1.jpg" class="slide active">
+                        <img src="113/茶會2.jpg" class="slide">
+                        <img src="113/茶會3.jpg" class="slide">
+                        <img src="113/茶會4.jpg" class="slide">
+                        <img src="113/茶會5.jpg" class="slide">
+                        <img src="113/茶會6.jpg" class="slide">
+                        <img src="113/茶會7.jpg" class="slide">
+            
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+            
+                <!-- 社團評鑑 -->
+                <div class="activity-card">
+                    <h3>社團評鑑</h3>
+                    <p>活動介紹：為了讓全校社團／系會展示一年成果並交流學習</p>
+            
+                    <div class="slider">
+                        <img src="113/社評1.jpg" class="slide active">
+                        <img src="113/社評2.jpg" class="slide">
+                        <img src="113/社評3.jpg" class="slide">
+                        <img src="113/社評4.jpg" class="slide">
+                        <img src="113/社評5.jpg" class="slide">
+            
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <h3>上學期師生座談會</h3>
+                    <p>活動介紹：藉由師生座談將學校的問題與解決方法與變動告知系會、社團及各班班代，也藉由此機會讓全校師生反映問題</p>
+            
+                    <div class="slider">
+                        <img src="113/師生(上)1.jpg" class="slide active">
+                        <img src="113/師生(上)2.jpg" class="slide">
+                        <img src="113/師生(上)3.jpg" class="slide">
+                        
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+                <!-- 校園演唱會 -->
+                <div class="activity-card">
+                    <h3>校園演唱會</h3>
+                    <p>活動介紹：讓全校師生在校內就能欣賞演唱會，提升校園活力與知名度</p>
+            
+                    <div class="slider">
+                        <img src="113/演唱會1.jpg" class="slide active">
+                        <img src="113/演唱會2.jpg" class="slide">
+                        <img src="113/演唱會3.jpg" class="slide">
+                        <img src="113/演唱會4.jpg" class="slide">
+                        <img src="113/演唱會5.jpg" class="slide">
+            
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <h3>小幹訓</h3>
+                    <p>活動介紹：讓未來接任學生會幹部的同學，去了解亙多的事情</p>
+            
+                    <div class="slider">
+                        <img src="113/小幹訓1.jpg" class="slide active">
+                        <img src="113/小幹訓2.jpg" class="slide">
+                        <img src="113/小幹訓3.jpg" class="slide">
+                        <img src="113/小幹訓4.jpg" class="slide">
+                        <img src="113/小幹訓5.jpg" class="slide">
+                        <img src="113/小幹訓6.jpg" class="slide">
+            
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+            <div class="activity-card">
+                    <h3>學權週</h3>
+                    <p>活動介紹：讓全校師生藉由這個機會反映問題</p>
+            
+                    <div class="slider">
+                        <img src="113/學權週1.jpg" class="slide active">
+                        <img src="113/學權週2.jpg" class="slide">
+                        <img src="113/學權週3.jpg" class="slide">
+                        <img src="113/學權週4.jpg" class="slide">
+                        <img src="113/學權週5.jpg" class="slide">
+            
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <h3>脫口秀</h3>
+                    <p>活動介紹：讓全校師生在校內就能欣賞脫口秀，提升校園活力與知名度</p>
+            
+                    <div class="slider">
+                        <img src="113/脫口秀1.jpg" class="slide active">
+                        <img src="113/脫口秀2.jpg" class="slide">
+                        <img src="113/脫口秀3.jpg" class="slide">
+                        <img src="113/脫口秀4.jpg" class="slide">
+                        <img src="113/脫口秀5.jpg" class="slide">
+                        <img src="113/脫口秀6.jpg" class="slide">
+            
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+                 <div class="activity-card">
+                    <h3>下學期師生座談會</h3>
+                    <p>活動介紹：藉由師生座談將學校的問題與解決方法與變動告知系會、社團及各班班代，也藉由此機會讓全校師生反映問題</p>
+            
+                    <div class="slider">
+                        <img src="113/師生(下)1.jpg" class="slide active">
+                        <img src="113/師生(下)2.jpg" class="slide">
+                        <img src="113/師生(下)3.jpg" class="slide">
+                        
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <h3>大幹訓</h3>
+                    <p>活動介紹：讓下年度要接任新幹部的同學去相互認識</p>
+            
+                    <div class="slider">
+                        <img src="113/大幹訓1.jpg" class="slide active">
+                        <img src="113/大幹訓2.jpg" class="slide">
+                        <img src="113/大幹訓3.jpg" class="slide">
+                        <img src="113/大幹訓4.jpg" class="slide">
+            
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+        <!-- 活動燈箱 Modal -->
+<div id="activity-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2025 勤益科技大學學生會</p>
+         <a href="https://www.facebook.com/NCUTCYSA/" class="left-align">
+        <img src="FB.png" alt="學生會FB" width="100">
+        </a>
+        <a href="https://www.instagram.com/ncutcysa/?hl=zh-tw" class="left-align">
+            <img src="IG.png" alt="學生會IG" width="150">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

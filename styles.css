@@ -1,0 +1,216 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding-top: 160px; /* 預留 header 高度 */
+}
+
+/* ===== Header ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0073e6;
+    color: white;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+/* ===== Buttons ===== */
+.tab-btn,
+.year-btn,
+.activity-btn {
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn {
+    background-color: #fff;
+    color: #0073e6;
+}
+
+.year-btn,
+.activity-btn {
+    background-color: #0073e6;
+    color: white;
+}
+
+.tab-btn:hover,
+.year-btn:hover,
+.activity-btn:hover {
+    background-color: #e6f0ff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ===== Tab Content ===== */
+.tab-content {
+    display: none;
+    padding: 30px;
+}
+
+.tab-content h2 {
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+/* ===== Cabinet Cards ===== */
+.cabinet-card {
+    display: inline-block;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.cabinet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+.cabinet-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.cabinet-card h3 {
+    font-size: 1.2rem;
+    color: #0073e6;
+}
+
+.cabinet-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ===== Activity Cards ===== */
+.activity-card {
+    display: inline-block;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 20px rgba(0,0,0,0.25);
+}
+
+/* ===== Slider ===== */
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ===== Purpose Section ===== */
+.purpose-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    right: 0;
+    width: 250px;
+}
+
+.purpose-table {
+    text-align: left;
+}
+
+/* ===== Rental ===== */
+#rental1 {
+    position: relative;
+}
+
+.rule-table {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px 0;
+}
+
+/* ===== Social Icons ===== */
+.left-align {
+    display: inline-block;
+    margin-right: 20px;
+}
