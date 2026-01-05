@@ -5,13 +5,20 @@
     box-sizing: border-box;
 }
 
+/* ⭐ 關鍵：鎖住根字級，避免 GitHub Pages 放大 */
+html {
+    font-size: 16px;
+}
+
 /* ===== Body ===== */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
-    padding-top: 160px; /* 預留 header 高度 */
+    padding-top: 140px;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* ===== Header ===== */
@@ -22,31 +29,36 @@ header {
     width: 100%;
     background-color: #0073e6;
     color: white;
-    padding: 20px 0;
+    padding: 16px 0;
     z-index: 1000;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
 }
 
+/* ===== Nav ===== */
 nav {
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 /* ===== Buttons ===== */
+button {
+    font-family: inherit;
+}
+
 .tab-btn,
 .year-btn,
 .activity-btn {
-    padding: 12px 24px;
-    margin: 8px;
-    font-size: 1.2rem;
-    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 6px;
+    font-size: 1rem;
+    border-radius: 6px;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
 }
 
 .tab-btn {
@@ -64,87 +76,74 @@ nav {
 .year-btn:hover,
 .activity-btn:hover {
     background-color: #e6f0ff;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
 }
 
 /* ===== Tab Content ===== */
 .tab-content {
     display: none;
-    padding: 30px;
+    padding: 24px;
 }
 
 .tab-content h2 {
+    font-size: 1.5rem;
     color: #0073e6;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 /* ===== Cabinet Cards ===== */
 .cabinet-card {
     display: inline-block;
-    width: 250px;
+    width: 240px;
     background-color: white;
     border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
+    margin: 16px;
+    padding: 16px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-
-.cabinet-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
 }
 
 .cabinet-card img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .cabinet-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #0073e6;
 }
 
 .cabinet-card p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #555;
 }
 
 /* ===== Activity Cards ===== */
 .activity-card {
     display: inline-block;
-    width: 600px;
+    width: 100%;
+    max-width: 560px;
     background-color: white;
     border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
+    margin: 16px auto;
+    padding: 18px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
     cursor: pointer;
-}
-
-.activity-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 20px rgba(0,0,0,0.25);
 }
 
 /* ===== Slider ===== */
 .slider {
     position: relative;
-    width: 80%;
+    width: 90%;
     max-width: 600px;
-    margin: 30px auto;
+    margin: 24px auto;
     overflow: hidden;
 }
 
 .slide {
     display: none;
-    width: 100%;
-    border-radius: 10px;
 }
 
 .slide.active {
@@ -162,33 +161,32 @@ nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 28px;
+    font-size: 1.5rem;
     cursor: pointer;
     background: rgba(0,0,0,0.5);
     color: #fff;
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: 50%;
 }
 
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* ===== Purpose Section ===== */
+/* ===== Purpose ===== */
 .purpose-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    gap: 20px;
 }
 
 .badge {
-    position: absolute;
-    right: 0;
-    width: 250px;
+    width: 220px;
 }
 
 .purpose-table {
     text-align: left;
+    font-size: 0.95rem;
 }
 
 /* ===== Rental ===== */
@@ -200,17 +198,19 @@ nav {
     position: absolute;
     top: 20px;
     right: 20px;
+    font-size: 0.9rem;
 }
 
 /* ===== Footer ===== */
 footer {
     background-color: #0073e6;
     color: white;
-    padding: 15px 0;
+    padding: 12px 0;
+    font-size: 0.9rem;
 }
 
-/* ===== Social Icons ===== */
+/* ===== Utility ===== */
 .left-align {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 16px;
 }

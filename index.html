@@ -2,59 +2,52 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>勤益科技大學學生會</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- 固定 Header -->
-    <header>
-        <div class="container">
-            <h1>勤益科技大學學生會</h1>
-            <nav>
-                <button class="tab-btn" onclick="showContent('intro')">學生會介紹</button>
-                <button class="tab-btn" onclick="showContent('cabinet')">幹部介紹</button>
-                <button class="tab-btn" onclick="showContent('rental1')">繳件規定</button>
-                <button class="tab-btn" onclick="showContent('activities')">活動介紹</button>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <!-- 學生會介紹 -->
-<div class="tab-content" id="intro">
+<header class="site-header">
+    <div class="container">
+        <h1 class="site-title">勤益科技大學學生會</h1>
+        <nav class="main-nav">
+            <button class="tab-btn" onclick="showContent('intro')">學生會介紹</button>
+            <button class="tab-btn" onclick="showContent('cabinet')">幹部介紹</button>
+            <button class="tab-btn" onclick="showContent('rental1')">繳件規定</button>
+            <button class="tab-btn" onclick="showContent('activities')">活動介紹</button>
+        </nav>
+    </div>
+</header>
+
+<main class="main-content">
+
+<section id="intro" class="tab-content">
     <h2>學生會介紹</h2>
-    <h1>學生會宗旨:</h1>
-    
-    <!-- 圖片超連結，靠左顯示 -->
-   
 
+    <h3>學生會宗旨</h3>
     <div class="purpose-box">
-        <img src="徽章.jpg" class="badge">
-        <table class="purpose-table">
-            <tr>
-                <td>
-                    1. 實現學生自治理念，增進學生權益，維繫校園和諧。<br>
-                    2. 培養學生獨立自主能力，發展校園民主制度。<br>
-                    3. 作為學校與學生間的溝通橋梁，創建溝通管道，增進學生福利。<br>
-                    4. 整合校內外資源，推動各類活動。<br>
-                </td>
-            </tr>
-        </table>
+        <img src="徽章.jpg" class="badge" alt="學生會徽章">
+        <ul>
+            <li>實現學生自治理念，增進學生權益</li>
+            <li>培養學生民主素養與自主能力</li>
+            <li>作為學生與校方的溝通橋梁</li>
+            <li>整合校內外資源，推動校園活動</li>
+        </ul>
     </div>
 
-    <h1>學生會簡介:</h1><br>
-    國立勤益科技大學學生會由學生會行政中心(行政)、學生議會(立法)、學生仲裁評議委員會(司法)組成，採行政、立法、司法三權分立。<br>
-    學生會為全校最高的學生自治組織，代表學生行使自治權利，處理學生在校學習、生活與權益有關事項，為學生與學校的溝通橋樑。<br>
-    還需負起管理全校社團、系學會及學生組織相關的行政工作及活動。除此之外，學生會還需辦理各種全校性活動，提升校園風氣及增進校園和諧。<br>
-    
-   
-</div>
+    <h3>學生會簡介</h3>
+    <p>
+        國立勤益科技大學學生會由行政、立法、司法三權分立組成，
+        為全校最高學生自治組織，代表學生行使自治權利。
+    </p>
+    <p>
+        學生會亦負責社團與系學會行政管理，
+        並辦理各類全校性活動，促進校園和諧。
+    </p>
+</section>
 
-
-
-        <!-- 幹部介紹 -->
-<div class="tab-content" id="cabinet">
+<section id="cabinet" class="tab-content">
     <h2>幹部介紹</h2>
     <div class="year-selector">
         <button class="year-btn" onclick="showYear('114')">114年</button>
@@ -189,43 +182,28 @@
         
     </div>
 </div>
-        <div class="tab-content" id="rental1">
-            <h2>繳件規則</h2>
+ </section>
 
-            <h1>勤益科技大學學生會繳件規則簡介</h1><br>
+<section id="rental1" class="tab-content">
+    <h2>繳件規則</h2>
+    <p><h3>每學期期初與期末辦理，時間由學生會公告。</h3></p><br>
+    <p><h3>請於活動日前 2 週，繳交至學生會行政中心。</h3></p><br>
+    <p>每周一到五 12:10~13:00</p>
 
-            <p>
-                <h3>每學期期初期末都會舉辦，開會時間會由學生會發布</h3><br>
-                <h3>繳件為活動前14天包含假日喔!!!否則記一點!!!1點扣下學期5%經費!!!</h3><br>
-                勤益科技大學學生會為確保各項活動、經費與行政事務之順利推動，訂有繳件規則，供各系學會、社團及相關學生組織遵循。<br>
-                凡涉及活動申請、經費核銷，皆須依規定填寫相關文件，並於期限內繳交完整資料。<br>
-                透過明確的繳件流程與期限規範，學生會得以有效進行審核與行政處理，同時保障各單位與學生之權益，促進校園事務運作之透明與效率。<br><br>
-            </p>
+    <div class="rule-files">
+        <a href="114.pdf" download>
+            <img src="學聯大會.jpg">
+            <span>學聯大會 PPT</span>
+        </a>
+        <a href="22nd.pdf" download>
+            <img src="社團大會.jpg">
+            <span>社團大會 PPT</span>
+        </a>
+    </div>
+</section>
 
-            <table class="rule-table">
-                <tr>
-                    <td>
-                        學聯大會PPT<br>
-                        <a href="114上期末學聯大會.pdf" download>
-                            <img src="學聯大會.jpg" alt="下載學聯大會PPT" width="200">
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        社團大會PPT<br>
-                        <a href="22nd-期末社團大會.pdf" download>
-                            <img src="社團大會.jpg" alt="下載社團大會PPT" width="200">
-                        </a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-
-        <!-- 活動介紹 -->
-        <div class="tab-content" id="activities">
-            <h2>活動介紹</h2>
+<section id="activities" class="tab-content">
+    <h2>活動介紹</h2>
             <div>
                 <button class="activity-btn" onclick="showActivity('114')">114年</button>
                 <button class="activity-btn" onclick="showActivity('113')">113年</button>
@@ -485,19 +463,14 @@
             </div>
         </div>
         </main>
-        <!-- 活動燈箱 Modal -->
+</main>
 
+<footer>
+    <p>© 2025 勤益科技大學學生會</p>
+    <img src="fb.png" width="40">
+    <img src="ig.png" width="40">
+</footer>
 
-    <footer>
-        <p>&copy; 2025 勤益科技大學學生會</p>
-         <a href="https://www.facebook.com/NCUTCYSA/" class="left-align">
-        <img src="FB.png" alt="學生會FB" width="100">
-        </a>
-        <a href="https://www.instagram.com/ncutcysa/?hl=zh-tw" class="left-align">
-            <img src="IG.png" alt="學生會IG" width="150">
-        </a>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
